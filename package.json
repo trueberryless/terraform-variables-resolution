@@ -4,6 +4,7 @@
   "description": "Resolve local terraform variables recursively and display them as inlay text besides your variables.",
   "version": "0.1.0",
   "publisher": "trueberryless",
+  "icon": "icon.jpg",
   "engines": {
     "vscode": "^1.74.0"
   },
