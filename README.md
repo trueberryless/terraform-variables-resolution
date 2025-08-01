@@ -4,7 +4,8 @@
 
 > **Resolve local terraform variables recursively and display them as inlay text besides your variables** - VS Code Extension
 
-[![View on Marketplace](https://img.shields.io/badge/View_on-Marketplace-blue)](https://marketplace.visualstudio.com/items?itemName=trueberryless.terraform-variables-resolution)
+[![View on Marketplace](https://img.shields.io/badge/View_on-Marketplace-blue?logo=terraform)](https://marketplace.visualstudio.com/items?itemName=trueberryless.terraform-variables-resolution)
+[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-green?logo=github)](https://github.com/trueberryless/terraform-variables-resolution)
 
 ## ✨ Features
 
