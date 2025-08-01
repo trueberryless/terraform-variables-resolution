@@ -1,8 +1,9 @@
 {
   "name": "terraform-variables-resolution",
-  "displayName": "terraform-variables-resolution",
+  "displayName": "Terraform Variables Resolution",
   "description": "Resolve local terraform variables recursively and display them as inlay text besides your variables.",
   "version": "0.0.1",
+  "publisher": "trueberryless",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -10,7 +11,13 @@
     "onLanguage:terraform"
   ],
   "categories": [
-    "Other"
+    "Programming Languages"
+  ],
+  "keywords": [
+    "Terraform",
+    "Variables",
+    "Resolution",
+    "Inline Display"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -49,6 +56,9 @@
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
+    "vscode:publish": "vsce publish --pat $VSCE_PAT",
+    "release": "pnpm run vscode:prepublish && pnpm run vscode:publish",
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
@@ -64,6 +74,8 @@
     "eslint": "^9.25.1",
     "typescript": "^5.8.3",
     "@vscode/test-cli": "^0.0.11",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11"
   }
 }
