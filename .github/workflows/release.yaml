@@ -37,7 +37,6 @@ jobs:
           title: "[ci] release"
           commit: "[ci] release"
           publish: pnpm run release
-          setupGitUser: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
