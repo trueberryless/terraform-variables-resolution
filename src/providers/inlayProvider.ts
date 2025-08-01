@@ -587,8 +587,7 @@ export class TerraformInlayProvider implements vscode.InlayHintsProvider {
       `**Complex Object Value:**\n\n` +
       "```json\n" +
       this.formatComplexObjectForTooltip(value) +
-      "\n```\n\n" +
-      `*Click to copy value to clipboard*`
+      "\n```"
     );
   }
 
@@ -601,8 +600,7 @@ export class TerraformInlayProvider implements vscode.InlayHintsProvider {
     return (
       `**Terraform Variable:** \`${variableName}\`\n\n` +
       `**Context:** \`${context}\`\n\n` +
-      `**Resolved Value:** \`${value}\`\n\n` +
-      `*Click to copy value to clipboard*`
+      `**Resolved Value:** \`${value}\``
     );
   }
 
@@ -618,8 +616,7 @@ export class TerraformInlayProvider implements vscode.InlayHintsProvider {
       `**Multiple Values Found (${resolvedValues.length}):**\n\n` +
       "```json\n" +
       jsonData +
-      "\n```\n\n" +
-      `*Click to copy JSON to clipboard*`
+      "\n```"
     );
   }
 
