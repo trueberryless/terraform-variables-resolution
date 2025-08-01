@@ -29,6 +29,11 @@ jobs:
       - name: Install vsce
         run: pnpm add -g @vscode/vsce
 
+      - name: Set up Git user
+        run: |
+          git config --global user.name "Felix Schneider"
+          git config --global user.email "99918022+trueberryless@users.noreply.github.com"
+
       - name: Create Release Pull Request or Publish
         uses: changesets/action@v1
         with:
