@@ -16,7 +16,7 @@
 
 - ✍️ [**Blog Post (WIP)**]() - Not yet published
 
-## 🔧 How It Works
+## ⌛ How It Works
 
 This VS Code Extension analyzes your project with these steps to help you write Terraform code:
 
@@ -32,6 +32,10 @@ This VS Code Extension analyzes your project with these steps to help you write 
 | Parameter                   | Description                     | Default |
 | --------------------------- | ------------------------------- | ------- |
 | `terraformResolver.enabled` | Enable or disable the extension | `true`  |
+
+## 🔧 Maintenance
+
+The VSCE_PAT will expire on 07/31/2026.
 
 <div align="center">
 
