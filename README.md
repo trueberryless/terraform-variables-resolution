@@ -15,7 +15,7 @@
 
 ## 📚 Resources
 
-- ✍️ [**Blog Post (WIP)**]() - Not yet published
+- ✍️ [**Blog Post**](https://blog.trueberryless.org/blog/terraform-variables-resolution/) - Vibe-coding a VS Code Extension for Terraform projects
 
 ## ⌛ How It Works
 
