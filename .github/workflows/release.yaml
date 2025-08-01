@@ -36,7 +36,6 @@ jobs:
           commit: "[ci] release"
           publish: pnpm run release
           setupGitUser: false
-          commitMode: "github-api"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
