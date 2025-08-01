@@ -2,7 +2,7 @@
   "name": "terraform-variables-resolution",
   "displayName": "Terraform Variables Resolution",
   "description": "Resolve local terraform variables recursively and display them as inlay text besides your variables.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "trueberryless",
   "icon": "icon.jpg",
   "engines": {
