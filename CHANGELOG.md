@@ -1,5 +1,11 @@
 # terraform-variables-resolution
 
+## 0.1.3
+
+### Patch Changes
+
+- [`0034810`](https://github.com/trueberryless/terraform-variables-resolution/commit/0034810078685e274ca321e5166034ee8e59c79a) Thanks [@trueberryless](https://github.com/trueberryless)! - Add link to blog post
+
 ## 0.1.2
 
 ### Patch Changes
