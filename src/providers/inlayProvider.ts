@@ -509,15 +509,13 @@ export class TerraformInlayProvider implements vscode.InlayHintsProvider {
         displayText = " → complex object";
         tooltipContent = this.createComplexObjectTooltip(
           variableName,
-          singleValue.value,
-          singleValue.context
+          singleValue.value
         );
       } else {
         displayText = ` → ${formattedValue}`;
         tooltipContent = this.createSingleValueTooltip(
           variableName,
-          formattedValue,
-          singleValue.context
+          formattedValue
         );
       }
     } else {
@@ -578,12 +576,10 @@ export class TerraformInlayProvider implements vscode.InlayHintsProvider {
   // NEW: Create tooltip for complex objects
   private createComplexObjectTooltip(
     variableName: string,
-    value: string,
-    context: string
+    value: string
   ): string {
     return (
       `**Terraform Variable:** \`${variableName}\`\n\n` +
-      `**Context:** \`${context}\`\n\n` +
       `**Complex Object Value:**\n\n` +
       "```json\n" +
       this.formatComplexObjectForTooltip(value) +
@@ -594,12 +590,10 @@ export class TerraformInlayProvider implements vscode.InlayHintsProvider {
   // NEW: Create tooltip for single values
   private createSingleValueTooltip(
     variableName: string,
-    value: string,
-    context: string
+    value: string
   ): string {
     return (
       `**Terraform Variable:** \`${variableName}\`\n\n` +
-      `**Context:** \`${context}\`\n\n` +
       `**Resolved Value:** \`${value}\``
     );
   }
